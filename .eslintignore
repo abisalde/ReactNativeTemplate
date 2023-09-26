@@ -1,0 +1,22 @@
+lint-staged.config.js
+commitlint.config.js
+husky.config.js
+react-native.config.js
+jest.config.js
+
+
+# don't link node_modules
+node_modules
+
+# don't lint buld files
+build
+.bundle
+
+# don't lint coverage output
+.eslintrc.js
+
+babel.config.js
+.prettierrc.js
+.prettierignore
+.eslintignore
+.watchmanconfig
