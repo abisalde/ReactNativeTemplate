@@ -5,13 +5,7 @@ module.exports = {
     es2021: true,
     "react-native/react-native": true,
   },
-  extends: [
-    "@react-native",
-    "eslint:recommend",
-    "standard-with-typescript",
-    "prettier",
-    "plugin:react/recommend",
-  ],
+  extends: ["@react-native", "standard-with-typescript", "prettier"],
   overrides: [
     {
       files: ["*.ts", "*.tsx"],
