@@ -10,11 +10,11 @@ const removeIgnoredFiles = async files => {
 };
 
 module.exports = {
-  // "*.{js,jsx,ts,tsx}": async files => {
-  //   const filesToLint = await removeIgnoredFiles(files);
-  //   return [`eslint --max-warnings=0 ${filesToLint}`];
-  // },
-  // "*.{js,jsx,ts,tsx}": ["eslint --fix"],
+  "*.{js,jsx,ts,tsx}": async files => {
+     const filesToLint = await removeIgnoredFiles(files);
+    return [`eslint --max-warnings=0 ${filesToLint}`];
+   },
+  "*.{js,jsx,ts,tsx}": ["eslint --fix"],
   "**/*.ts?(x)": () => "npm run type-check",
   "**/*.ts?(x)": () => "npx prettier --write .",
   "*.{json,yaml}": ["prettier --write ."],
