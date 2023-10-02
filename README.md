@@ -8,6 +8,13 @@ To create a new project using the barebone boilerplate:
 git clone git@github.com:abisalde/ReactNativeTemplate.git ReactNativeTemplate
 ```
 
+### Change Template name
+
+```sh
+npx react-native-rename "App Name" -b "com.app-name.app"
+```
+-  ↗️ Checkout [react-native-rename](https://www.npmjs.com/package/react-native-rename)
+
 # 🎯 Step By Step Guide (TL;DR)
 
 ## Clean-Up & Simple Run
@@ -62,6 +69,9 @@ Replace your machine name instead of `username`
 ```
 sdk.dir=/Users/username/Library/Android/sdk
 ```
+
+### 🎁️ Credits
+- [FreakyCoder](mailto:kurayogun@gmail.com)
 
 # 📃 Documentations
 

@@ -13,7 +13,14 @@
     "format:check": "pettier - c .",
     "type-check": "tsc --noEmit --incremental false",
     "lint:fix": "eslint src --fix && yarn format",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "husky:prettier": "npx husky add .husky/pre-commit 'yarn run prettier'",
+    "clean-up": "rm -rf .git && rm -rf ./assets && git init && yarn run husky:setup",
+    "clean:android": "cd android && ./gradlew clean",
+    "debug:android": "cd android && ./gradlew assembleDebug",
+    "release:android": "cd android && ./gradlew assembleRelease",
+    "release:play": "cd android && ./gradlew bundleRelease",
+    "test:apk": "react-native run-android --variant=release",
   },
   "dependencies": {
     "@freakycoder/react-native-bounceable": "^1.0.3",
